@@ -1,30 +1,43 @@
-<!DOCTYPE html!>
-<html>
-
-<head>
-	<title>Texas Conservationists</title>
-	<meta charset="UTF-8" />
-</head>
-<body>
-  <header>
-    <h1>Texas Conservationists - Team</h1>
-  </header>
-  <nav>
-    <b>
-      <a href="index.html">Home</a> &nbsp;
-      <a href="volunteer.html">Volunteer</a> &nbsp;
-      <a href="team.html">Meet the Team</a> &nbsp;
-      <a href="contact.html">Contact</a>
-    </b>
-  </nav>
-  <main>
-    <h2>Meet the Team</h2>
-  </main>
-  <footer>
-    <small><i>
-      Copyright &copy; 2022 Texas Conservationists<br>
-      <a href="careteam@ctxconserve.com">careteam@ctxconserve.com</a>
-    </i></small>
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Texas Conservationists - Team</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <h1>
+        <a href="index.html">Texas Conservationists</a>
+      </h1>
+      <nav>
+        <a id="homeLink" href="index.html">Home</a> &nbsp;
+        <a id="volunteerLink" href="volunteer.html">Volunteer</a> &nbsp;
+        <a id="teamLink" href="team.html">Meet the Team</a> &nbsp;
+        <a id="contactLink" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!--Jumbotron-->
+      <section class="hero">
+        <div class="hero-cta">
+          <h2>Meet the Team</h2>
+        </div>
+      </section>
+      <section id="team" class="intro">
+        <h1>Our Team</h1>
+      </section>
+    </main>
+    <footer>
+      <div>&copy; Texas Conservationists</div>
+      <div>Est. 1976</div>
+    </footer>
+    <script>
+      let active = document.getElementById("teamLink");
+      active.classList.add("active");
+    </script>
+  </body>
 </html>

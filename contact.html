@@ -1,37 +1,49 @@
-<!DOCTYPE html!>
-<html>
-
-<head>
-	<title>Texas Conservationists</title>
-	<meta charset="UTF-8" />
-</head>
-<body>
-  <header>
-    <h1>Texas Conservationists - Contact</h1>
-  </header>
-  <nav>
-    <b>
-      <a href="index.html">Home</a> &nbsp;
-      <a href="volunteer.html">Volunteer</a> &nbsp;
-      <a href="team.html">Meet the Team</a> &nbsp;
-      <a href="contact.html">Contact</a>
-    </b>
-  </nav>
-  <main>
-    <h2>Contact Us</h2>
-    <div>
-        Texas Conservationists<br>
-        254-555-5555<br>
-        123 Main St.<br>
-        Temple, TX 76501
-    </div>
-    <br>
-  </main>
-  <footer>
-    <small><i>
-      Copyright &copy; 2022 Texas Conservationists<br>
-      <a href="careteam@ctxconserve.com">careteam@ctxconserve.com</a>
-    </i></small>
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Texas Conservationists - Contact</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <h1>
+        <a href="index.html">Texas Conservationists</a>
+      </h1>
+      <nav>
+        <a id="homeLink" class="navLink" href="index.html">Home</a> &nbsp;
+        <a id="volunteerLink" class="navLink" href="volunteer.html">Volunteer</a> &nbsp;
+        <a id="teamLink" class="navLink" href="team.html">Meet the Team</a> &nbsp;
+        <a id="contactLink" class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!--Jumbotron-->
+      <section class="hero">
+        <div class="hero-cta">
+          <h2>Contact Us</h2>
+        </div>
+      </section>
+      <section id="contact" class="intro">
+        <div>
+          Texas Conservationists<br>
+          254-555-5555<br>
+          123 Main St.<br>
+          Temple, TX 76501
+        </div>
+        <br>
+      </section>
+    </main>
+    <footer>
+      <div>&copy; Texas Conservationists</div>
+      <div>Est. 1976</div>
+    </footer>
+    <script>
+      let active = document.getElementById("contactLink");
+      active.classList.add("active");
+    </script>
+  </body>
 </html>

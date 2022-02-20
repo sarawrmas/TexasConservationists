@@ -1,44 +1,62 @@
-<!DOCTYPE html!>
-<html>
-
-<head>
-	<title>Texas Conservationists</title>
-	<meta charset="UTF-8" />
-</head>
-<body>
-  <header>
-    <h1>Texas Conservationists</h1>
-  </header>
-  <nav>
-    <b>
-      <a href="index.html">Home</a> &nbsp;
-      <a href="volunteer.html">Volunteer</a> &nbsp;
-      <a href="team.html">Meet the Team</a> &nbsp;
-      <a href="contact.html">Contact</a>
-    </b>
-  </nav>
-  <main>
-    <h2>Be the Change</h2>
-    <dl>
-      <dt>
-        <strong>Compassionate Care</strong>
-      </dt>
-        <dd>Our team adheres to Leave No Trace priniciples.</dd>
-      <dt>
-        <strong>Years of Experience</strong>
-      </dt>
-        <dd>Texas Conservationists have been caring for Central Texas' ecosystem since 1976.</dd>
-      <dt>
-        <strong>Open Door Policy</strong>
-      </dt>
-        <dd>We welcome people from all walks of life to get involved in caring for our home.</dd>
-    </dl>
-  </main>
-  <footer>
-    <small><i>
-      Copyright &copy; 2022 Texas Conservationists<br>
-      <a href="careteam@ctxconserve.com">careteam@ctxconserve.com</a>
-    </i></small>
-  </footer>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Texas Conservationists</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <h1>
+        <a href="index.html">Texas Conservationists</a>
+      </h1>
+      <nav>
+        <a id="homeLink" class="navLink" href="index.html">Home</a> &nbsp;
+        <a id="volunteerLink" class="navLink" href="volunteer.html">Volunteer</a> &nbsp;
+        <a id="teamLink" class="navLink" href="team.html">Meet the Team</a> &nbsp;
+        <a id="contactLink" class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!--Jumbotron-->
+      <section class="hero">
+        <div class="hero-cta">
+          <h2>Be the Change.</h2>
+        </div>
+      </section>
+      <section id="who-we-are" class="intro">
+        <dl>
+          <dt>
+            <strong>Compassionate Care</strong>
+          </dt>
+          <dd>Our team adheres to Leave No Trace priniciples.</dd>
+          <dt>
+            <strong>Years of Experience</strong>
+          </dt>
+          <dd>
+            Texas Conservationists have been caring for Central Texas' ecosystem
+            since 1976.
+          </dd>
+          <dt>
+            <strong>Open Door Policy</strong>
+          </dt>
+          <dd>
+            We welcome people from all walks of life to get involved in caring for
+            our home.
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <div>&copy; Texas Conservationists</div>
+      <div>Est. 1976</div>
+    </footer>
+    <script>
+      let active = document.getElementById("homeLink");
+      active.classList.add("active");
+    </script>
+  </body>
 </html>

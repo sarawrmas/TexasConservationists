@@ -1,55 +1,72 @@
-<!DOCTYPE html!>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Texas Conservationists - Volunteer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Texas Conservationists - Contact</title>
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>Texas Conservationists</h1>
-    <nav>
-      <b>
-        <a href="index.html">Home</a> &nbsp;
-        <a href="volunteer.html">Volunteer</a> &nbsp;
-        <a href="team.html">Meet the Team</a> &nbsp;
-        <a href="contact.html">Contact</a>
-      </b>
-    </nav>
+    <!--Navbar-->
+    <header>
+      <h1>
+        <a href="index.html">Texas Conservationists</a>
+      </h1>
+      <nav>
+        <a id="homeLink" class="navLink" href="index.html">Home</a> &nbsp;
+        <a id="volunteerLink" class="navLink" href="volunteer.html">Volunteer</a> &nbsp;
+        <a id="teamLink" class="navLink" href="team.html">Meet the Team</a> &nbsp;
+        <a id="contactLink" class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </header>
     <main>
-      <h2>Volunteer Opportunities</h2>
-      <ul>
-        <li>
-          <strong>Community Events</strong><br>
-          No matter your interest, there is an event for you.
-          Races, pot lucks, food drives, speaker series, plays, theme parks, and more.
-        </li>
-        <li>
-          <strong>Park Maintenance</strong><br>
-          Love to get your hands dirty? We maintain over 50 local hike and bike trails,
-          parks, and community centers. Whether you want to plant a tree or dig up
-          invasive species, there is a job for you.
-        </li>
-        <li>
-          <strong>Fundraising</strong><br>
-          Get involved in a number of fundraising events that keeps our organization
-          running smoothly.
-        </li>
-        <li>
-          <strong>Clean Up</strong><br>
-          Litter can be harmful to our local plants and animals. Our volunteers help
-          ensure our parks, lakes, and neighborhoods stay litter-free.
-        </li>
-        <li>
-          <strong>Miscellaneous</strong><br>
-          Have an idea of your own? We are always looking to contribute to the community
-          and welcome all suggestions!
-        </li>
-      </ul>
+      <!--Jumbotron-->
+      <section class="hero">
+        <div class="hero-cta">
+          <h2>Get Involved</h2>
+        </div>
+      </section>
+      <section id="volunteer" class="intro">
+        <h2>Volunteer Opportunities</h2>
+        <ul>
+          <li>
+            <strong>Community Events</strong><br>
+            No matter your interest, there is an event for you.
+            Races, pot lucks, food drives, speaker series, plays, theme parks, and more.
+          </li>
+          <li>
+            <strong>Park Maintenance</strong><br>
+            Love to get your hands dirty? We maintain over 50 local hike and bike trails,
+            parks, and community centers. Whether you want to plant a tree or dig up
+            invasive species, there is a job for you.
+          </li>
+          <li>
+            <strong>Fundraising</strong><br>
+            Get involved in a number of fundraising events that keeps our organization
+            running smoothly.
+          </li>
+          <li>
+            <strong>Clean Up</strong><br>
+            Litter can be harmful to our local plants and animals. Our volunteers help
+            ensure our parks, lakes, and neighborhoods stay litter-free.
+          </li>
+          <li>
+            <strong>Miscellaneous</strong><br>
+            Have an idea of your own? We are always looking to contribute to the community
+            and welcome all suggestions!
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-      <small><i>
-        Copyright &copy; 2022 Texas Conservationists<br>
-        <a href="careteam@ctxconserve.com">careteam@ctxconserve.com</a>
-      </i></small>
+      <div>&copy; Texas Conservationists</div>
+      <div>Est. 1976</div>
     </footer>
+    <script>
+      let active = document.getElementById("volunteerLink");
+      active.classList.add("active");
+    </script>
   </body>
 </html>
+
