@@ -4,54 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Texas Conservationists</title>
-    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/images/tree.png" />
+    <title>Texas Conservation</title>
+    <style>
+      #lnt-cta {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+      #lnt {
+        color: white;
+      }
+      #lnt:hover {
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <!--Navbar-->
     <header>
       <h1>
-        <a href="index.html">Texas Conservationists</a>
+        <a href="index.html">Texas Conservation</a>
       </h1>
       <nav>
-        <a id="homeLink" class="navLink" href="index.html">Home</a> &nbsp;
-        <a id="volunteerLink" class="navLink" href="volunteer.html">Volunteer</a> &nbsp;
-        <a id="teamLink" class="navLink" href="team.html">Meet the Team</a> &nbsp;
+        <a id="homeLink" class="navLink" href="index.html">Home</a>
+        <a id="volunteerLink" class="navLink" href="volunteer.html"
+          >Volunteer</a
+        >
+        <a id="teamLink" class="navLink" href="team.html">Meet the Team</a>
         <a id="contactLink" class="navLink" href="contact.html">Contact</a>
       </nav>
     </header>
     <main>
       <!--Jumbotron-->
-      <section class="hero">
+      <div class="hero">
         <div class="hero-cta">
           <h2>Be the Change.</h2>
         </div>
+      </div>
+      <!--Who We Are-->
+      <section id="who-we-are">
+        <h2 class="section-title">Who We Are</h2>
+        <p>
+          Texas Conservation is a non-profit organization built on the need for
+          plant and wildlife conservation.
+        </p>
+        <p>
+          Together, our team hits the ground to clean up parks, organize
+          fund-raisers, maintain trails, and inform the public on Leave No Trace
+          principles.
+        </p>
+        <p id="lnt-cta">
+          Learn more about Leave No Trace principles
+          <a id="lnt" href="https://lnt.org/why/7-principles/">here</a>.
+        </p>
       </section>
-      <section id="who-we-are" class="intro">
+      <!--What We Do-->
+      <section id="what-we-do">
+        <h2 class="section-title">What We Do</h2>
         <dl>
-          <dt>
-            <strong>Compassionate Care</strong>
-          </dt>
+          <dt class="section-subheading">Compassionate Care</dt>
           <dd>Our team adheres to Leave No Trace priniciples.</dd>
-          <dt>
-            <strong>Years of Experience</strong>
-          </dt>
+          <dt class="section-subheading">Years of Experience</dt>
           <dd>
-            Texas Conservationists have been caring for Central Texas' ecosystem
+            Texas Conservation has been caring for Central Texas' ecosystem
             since 1976.
           </dd>
-          <dt>
-            <strong>Open Door Policy</strong>
-          </dt>
+          <dt class="section-subheading">Open Door Policy</dt>
           <dd>
-            We welcome people from all walks of life to get involved in caring for
-            our home.
+            We welcome people from all walks of life to get involved in caring
+            for our home.
           </dd>
         </dl>
       </section>
     </main>
     <footer>
-      <div>&copy; Texas Conservationists</div>
+      <div>&copy; Texas Conservation</div>
       <div>Est. 1976</div>
     </footer>
     <script>
