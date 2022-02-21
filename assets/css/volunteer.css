@@ -1,19 +1,4 @@
-h3 {
-  font-size: 2.5rem;
-}
-
-.item {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-}
-
-.item:not(:last-child) {
-  border-bottom: 1px solid white;
-}
-
-/* Form */
-
+/* Hero Form */
 .hero-form {
   background-color: rgba(126, 161, 114, 0.8);
   padding: 20px;
@@ -112,16 +97,6 @@ h3 {
   background-color: var(--dark-brown);
 }
 
-/* Volunteer Opportunities*/
-.event-img {
-  height: 300px;
-  width: 600px;
-}
-
-.event:not(:last-child) {
-  border-bottom: 1px solid white;
-}
-
 /* Get Involved*/
 .step {
   display: flex;
@@ -169,11 +144,6 @@ h3 {
     width: 100%;
     margin: 0 3%;
   }
-
-  .event-img {
-    height: 200px;
-    width: 400px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -197,12 +167,5 @@ h3 {
 
   .step-text {
     flex: 100%;  
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .event-img {
-    width: 80vw;
-    height: 40vw;
   }
 }

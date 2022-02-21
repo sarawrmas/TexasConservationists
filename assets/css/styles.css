@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+h3 {
+  font-size: 2.5rem;
+}
+
 section {
   background-color: var(--light-green);
   padding: 3.75rem;
@@ -63,6 +67,16 @@ section {
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.item {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid white;
 }
 
 /* Hero */

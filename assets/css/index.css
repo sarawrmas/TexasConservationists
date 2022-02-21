@@ -1,0 +1,36 @@
+/* Who We Are */
+#lnt-cta {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+#lnt {
+  color: white;
+}
+#lnt:hover {
+  font-style: italic;
+}
+
+/* What We Do*/
+.event-img {
+  height: 300px;
+  width: 600px;
+}
+
+.event:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 980px) {
+  .event-img {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .event-img {
+    width: 80vw;
+    height: 40vw;
+  }
+}
