@@ -1,0 +1,104 @@
+/* Contact Information */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info p, .contact-info address {
+  margin: 1.25rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: white;
+}
+
+.contact-info a:hover {
+  font-style: italic;
+}
+
+
+/* Reach Out Form */
+.contact-form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 130px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 2px solid var(--light-brown);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: var(--dark-green);
+  color: var(--light-green);
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  background: var(--dark-brown);
+}
+
+@media screen and (max-width: 980px) {  
+  iframe {
+    flex: 1 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {  
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+
+  iframe {
+    width: 80%;
+  }
+}
