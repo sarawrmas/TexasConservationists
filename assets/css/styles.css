@@ -40,7 +40,7 @@ section {
   text-align: center;
   line-height: 1.7;
   color: var(--dark-green);
-  width: 100%;
+  width: 100vw;
   font-size: 1.25rem;
   margin: 300px auto 0 auto;
 }
@@ -160,4 +160,43 @@ footer div {
 
 footer a {
   color: var(--light-green);
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
 }
