@@ -39,7 +39,7 @@ h3 {
 }
 
 section {
-  background-color: var(--light-green);
+  background-color: rgba(139, 177, 116, 0.8);
   padding: 3.75rem;
   text-align: center;
   line-height: 1.7;
